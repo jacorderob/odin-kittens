@@ -1,0 +1,7 @@
+<h1><%= @kitten.name %></h1>
+<ul>
+  <li>Age: <%= @kitten.age %></li>
+  <li>Cuteness: <%= @kitten.cuteness %></li>
+  <li>Softness: <%= @kitten.softness %></li>
+</ul>
+<%= link_to "Destroy #{@kitten.name}", @kitten, method: :delete, data: { confirm: "Are you sure you want to kill #{@kitten.name}?" } %>
